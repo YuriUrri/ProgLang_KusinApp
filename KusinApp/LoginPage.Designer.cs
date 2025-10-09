@@ -41,7 +41,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(97, 52);
+            label1.Location = new Point(109, 145);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(0, 15);
@@ -53,7 +53,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Gill Sans MT", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ImageAlign = ContentAlignment.TopCenter;
-            label2.Location = new Point(38, 29);
+            label2.Location = new Point(50, 122);
             label2.Name = "label2";
             label2.Size = new Size(246, 67);
             label2.TabIndex = 1;
@@ -62,7 +62,7 @@
             // 
             // txtUsername
             // 
-            txtUsername.Location = new Point(82, 232);
+            txtUsername.Location = new Point(94, 325);
             txtUsername.Margin = new Padding(2, 1, 2, 1);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(146, 23);
@@ -70,7 +70,7 @@
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(83, 289);
+            txtPassword.Location = new Point(95, 382);
             txtPassword.Margin = new Padding(2, 1, 2, 1);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(146, 23);
@@ -80,7 +80,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(82, 272);
+            label4.Location = new Point(94, 365);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
             label4.Size = new Size(57, 15);
@@ -91,7 +91,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(82, 215);
+            label5.Location = new Point(94, 308);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
             label5.Size = new Size(60, 15);
@@ -102,7 +102,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 20F);
-            label3.Location = new Point(83, 132);
+            label3.Location = new Point(95, 225);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
             label3.Size = new Size(135, 37);
@@ -113,7 +113,7 @@
             // 
             loginButton.BackColor = Color.FromArgb(255, 128, 0);
             loginButton.BackgroundImageLayout = ImageLayout.Zoom;
-            loginButton.Location = new Point(114, 333);
+            loginButton.Location = new Point(126, 426);
             loginButton.Margin = new Padding(2, 1, 2, 1);
             loginButton.Name = "loginButton";
             loginButton.Size = new Size(81, 22);
@@ -127,7 +127,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(344, 497);
+            ClientSize = new Size(344, 590);
             Controls.Add(loginButton);
             Controls.Add(label3);
             Controls.Add(label5);

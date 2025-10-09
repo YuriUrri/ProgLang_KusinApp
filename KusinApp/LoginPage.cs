@@ -18,8 +18,11 @@ namespace KusinApp
         {
             InitializeComponent();
             help.dbConnection();
+            this.AcceptButton = loginButton;
 
         }
+
+        
 
         private void LoginPage_Load(object sender, EventArgs e)
         {
@@ -77,6 +80,7 @@ namespace KusinApp
             
         }
 
+        
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 

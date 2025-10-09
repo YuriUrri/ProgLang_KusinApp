@@ -37,13 +37,13 @@ namespace KusinApp
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
-            suggestionBox = new ListBox();
             addButton = new Button();
             itemList = new ListBox();
             Addlabel = new Label();
             label2 = new Label();
             recipeSuggestionBox = new ListView();
             recipesImageList = new ImageList(components);
+            suggestionBox = new ListBox();
             SuspendLayout();
             // 
             // label1
@@ -96,17 +96,6 @@ namespace KusinApp
             button3.Text = "Search Recipes";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
-            // 
-            // suggestionBox
-            // 
-            suggestionBox.FormattingEnabled = true;
-            suggestionBox.ItemHeight = 15;
-            suggestionBox.Location = new Point(12, 138);
-            suggestionBox.Name = "suggestionBox";
-            suggestionBox.Size = new Size(231, 94);
-            suggestionBox.TabIndex = 5;
-            suggestionBox.Visible = false;
-            suggestionBox.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // addButton
             // 
@@ -166,6 +155,17 @@ namespace KusinApp
             recipesImageList.ImageSize = new Size(16, 16);
             recipesImageList.TransparentColor = Color.Transparent;
             // 
+            // suggestionBox
+            // 
+            suggestionBox.FormattingEnabled = true;
+            suggestionBox.ItemHeight = 15;
+            suggestionBox.Location = new Point(12, 138);
+            suggestionBox.Name = "suggestionBox";
+            suggestionBox.Size = new Size(231, 94);
+            suggestionBox.TabIndex = 5;
+            suggestionBox.Visible = false;
+            suggestionBox.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            // 
             // MainPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -196,12 +196,12 @@ namespace KusinApp
         private Button button1;
         private Button button2;
         private Button button3;
-        private ListBox suggestionBox;
         private Button addButton;
         private ListBox itemList;
         private Label Addlabel;
         private Label label2;
         private ListView recipeSuggestionBox;
         private ImageList recipesImageList;
+        private ListBox suggestionBox;
     }
 }

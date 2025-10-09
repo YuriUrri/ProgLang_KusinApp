@@ -99,17 +99,7 @@ namespace KusinApp
                     dbConn.Close();
             }
 
-            //using (MySqlConnection conn = new MySqlConnection("server=127.0.0.1;user=root;database=kusinapp;password=;"))
-            //using (MySqlCommand cmd = new MySqlCommand(query, conn))
-            //{
-            //    conn.Open();
-            //    cmd.Parameters.AddWithValue("@user", user);
-
-            //    object result = cmd.ExecuteScalar(); // calls password_hash from database
-
-             // user not found
-
-            //}
+           
         }
     }
 }
