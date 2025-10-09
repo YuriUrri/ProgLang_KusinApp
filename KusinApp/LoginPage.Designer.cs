@@ -30,56 +30,60 @@
         {
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtUsername = new TextBox();
+            txtPassword = new TextBox();
             label4 = new Label();
             label5 = new Label();
             label3 = new Label();
-            button1 = new Button();
+            loginButton = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(181, 110);
+            label1.Location = new Point(97, 52);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(0, 32);
+            label1.Size = new Size(0, 15);
             label1.TabIndex = 0;
-            label1.Click += this.label1_Click;
+            label1.Click += label1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Gill Sans MT", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ImageAlign = ContentAlignment.TopCenter;
-            label2.Location = new Point(71, 62);
-            label2.Margin = new Padding(6, 0, 6, 0);
+            label2.Location = new Point(38, 29);
             label2.Name = "label2";
-            label2.Size = new Size(492, 133);
+            label2.Size = new Size(246, 67);
             label2.TabIndex = 1;
             label2.Text = "KusinApp";
             label2.Click += label2_Click;
             // 
-            // textBox1
+            // txtUsername
             // 
-            textBox1.Location = new Point(153, 494);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(267, 39);
-            textBox1.TabIndex = 3;
+            txtUsername.Location = new Point(82, 232);
+            txtUsername.Margin = new Padding(2, 1, 2, 1);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(146, 23);
+            txtUsername.TabIndex = 3;
             // 
-            // textBox2
+            // txtPassword
             // 
-            textBox2.Location = new Point(154, 616);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(267, 39);
-            textBox2.TabIndex = 4;
+            txtPassword.Location = new Point(83, 289);
+            txtPassword.Margin = new Padding(2, 1, 2, 1);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(146, 23);
+            txtPassword.TabIndex = 4;
+            txtPassword.TextChanged += textBox2_TextChanged;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(153, 581);
+            label4.Location = new Point(82, 272);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(111, 32);
+            label4.Size = new Size(57, 15);
             label4.TabIndex = 5;
             label4.Text = "Password";
             label4.Click += label4_Click;
@@ -87,9 +91,10 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(153, 459);
+            label5.Location = new Point(82, 215);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(121, 32);
+            label5.Size = new Size(60, 15);
             label5.TabIndex = 6;
             label5.Text = "Username";
             // 
@@ -97,39 +102,42 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 20F);
-            label3.Location = new Point(154, 282);
+            label3.Location = new Point(83, 132);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(266, 72);
+            label3.Size = new Size(135, 37);
             label3.TabIndex = 7;
             label3.Text = "Welcome!";
             // 
-            // button1
+            // loginButton
             // 
-            button1.BackColor = Color.FromArgb(255, 128, 0);
-            button1.BackgroundImageLayout = ImageLayout.Zoom;
-            button1.Location = new Point(211, 711);
-            button1.Name = "button1";
-            button1.Size = new Size(150, 46);
-            button1.TabIndex = 8;
-            button1.Text = "Login";
-            button1.UseVisualStyleBackColor = false;
+            loginButton.BackColor = Color.FromArgb(255, 128, 0);
+            loginButton.BackgroundImageLayout = ImageLayout.Zoom;
+            loginButton.Location = new Point(114, 333);
+            loginButton.Margin = new Padding(2, 1, 2, 1);
+            loginButton.Name = "loginButton";
+            loginButton.Size = new Size(81, 22);
+            loginButton.TabIndex = 8;
+            loginButton.Text = "Login";
+            loginButton.UseVisualStyleBackColor = false;
+            loginButton.Click += button1_Click;
             // 
             // LoginPage
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(639, 1259);
-            Controls.Add(button1);
+            ClientSize = new Size(344, 497);
+            Controls.Add(loginButton);
             Controls.Add(label3);
             Controls.Add(label5);
             Controls.Add(label4);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUsername);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(2, 1, 2, 1);
             Name = "LoginPage";
-            Text = "LoginPage";
             Load += LoginPage_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -139,11 +147,11 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtUsername;
+        private TextBox txtPassword;
         private Label label4;
         private Label label5;
         private Label label3;
-        private Button button1;
+        private Button loginButton;
     }
 }
